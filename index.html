@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laoseisu kontroll</title>
+  <script>
+    function tervita() {
+      let firma = document.getElementById('firma_nimi').value;
+      let toode = document.getElementById('toode').value;
+      alert(`Tere, ${firma}. Olete valinud toote: ${toode}`);
+    }
+  </script>
+</head>
+<body>
+<h1>Firma laoseisu kontroll</h1>
+<form>
+  <label for="firma_nimi">Sisesta firma nimi:</label>
+  <input type="text" id="firma_nimi" name="firma_nimi" required><br><br>
+
+  <label for="toode">Sisesta toote nimetus:</label>
+  <input type="text" id="toode" name="toode" required><br><br>
+
+  <button type="button" onclick="tervita()">Kontrolli</button>
+</form>
+</body>
+</html>
